@@ -72,6 +72,12 @@
     background-color: transparent;
     outline: 2px solid #fff;
 }
+.fa-right-to-bracket {
+    margin-right: 25px;
+}
+.fa-unlock-keyhole {
+    margin-right: 25px;
+}
 .chekbox-group {
     margin-top: 12px;
     width: 350px;

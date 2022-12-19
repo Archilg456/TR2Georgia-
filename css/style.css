@@ -27,13 +27,51 @@
    max-height: 100%;
    height: 877px;
    background: #161619FF;
-   position: absolute;
+   position: static;
    z-index: 999;
-   margin-top: -3rem;
+   margin-top: -23.79rem;
    flex-direction: column;
-
-  
 }
+iframe {
+    margin-left: 38px;
+}
+.about__us {
+    max-width: 100%;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 2rem;
+     position: relative;
+}
+.about__us  h2 {
+    font-size: 35px;
+    font-weight: 800;
+    margin-top: 155px;
+    margin-bottom: 35px;
+}
+.about__us p {
+    font-size: 19px;
+    letter-spacing: 0.2px;
+}
+.about__us span {
+    color: #ff512f;
+    font-weight: 800;
+}
+.service {
+    max-width: 100%;
+    width: 850px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    position: relative;
+}
+.grid_elements {
+    max-width: 100%;
+    width: 850px;
+    margin: 0 auto;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    position: relative;  
+}
+
 .reg__log_fomr a {
     color: #fff;
     font-size: 2.2rem;
@@ -45,7 +83,7 @@
 .Log_form {
     max-width: 100%;
     width: 380px;
-    margin-top: 250px;
+    margin-top: 180px;
     margin-left: 35px;
     display: flex;
     flex-direction: column;
@@ -86,7 +124,6 @@ label {
     color: #fff;
     font-size: 18px;
 }
-
 .input-label {
     position: absolute;
     top: 0;

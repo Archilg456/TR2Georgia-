@@ -233,3 +233,45 @@ color: #962fbf;
 .fa-facebook:hover {
   color: #1877F2FF;
 }
+/* service  */
+
+  /* .reg__log_fomr_1 {
+    margin-top: -52.35rem;
+  } */
+  .acordeon_container {
+    max-width: 100%;
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .acordeon_container .acordeon__box {
+    position: relative;
+    margin: 10px 20px ;
+  }
+  .acordeon_container .acordeon__box .content__title {
+    position: relative;
+    padding: 10px;
+    background: #42826CFF;
+    cursor: pointer;
+  } 
+  .acordeon_container .acordeon__box .content__title::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .acordeon_container .acordeon__box  .acordeon__content {
+    position: relative;
+    background: bisque;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+  .acordeon_container .acordeon__box.active  .acordeon__content {
+    height: 150px;
+  }

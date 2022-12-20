@@ -29,8 +29,31 @@
    background: #161619FF;
    position: static;
    z-index: 999;
-   margin-top: -23.79rem;
+   margin-top: -21.79rem;
    flex-direction: column;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+.logo i {
+    font-size: 125px;
+    color: #42826CFF;
+    margin-left: 0.35em;
+}
+.logo a {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.logo span {
+    color: #42826CFF;
+}
+.drop {
+    width: 150px;
+    height: 2px;
+    margin: 13px 0 10px 8em;
+    background: #42826CFF;
 }
 iframe {
     margin-left: 38px;
@@ -77,13 +100,10 @@ iframe {
     font-size: 2.2rem;
     margin-left: 5rem;
 }
-.reg__log_fomr span {
-    color: #FF7F00FF;
-}
 .Log_form {
     max-width: 100%;
     width: 380px;
-    margin-top: 180px;
+    margin-top: 125px;
     margin-left: 35px;
     display: flex;
     flex-direction: column;
@@ -146,7 +166,6 @@ label {
     color: #d1e5fc;
     padding-inline: 8px ;
   }
-
   .enter_btn{
   border-radius: 35px;
   max-width: 100%;
@@ -155,7 +174,7 @@ label {
   margin-top: 19px;
   cursor: pointer;
   font-size: 20px;
-  background: #ff512f;
+  background: #42826CFF;
   color: #d1e5fc;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;

@@ -22,6 +22,35 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.li_item{
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+.li_item:after{
+  content: "";
+  position: absolute;
+  background-color: #42826CFF;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.li_item:hover{
+  color: #ffffff;
+}
+.li_item:hover:after{
+  width: 100%;
+}
+.li_item a {
+  color: #161619FF;
+}
 .reg__log_fomr {
     background-color: #161619;
     -webkit-border-radius: 0 12px 12px 0;
@@ -278,14 +307,20 @@ color: #962fbf;
   .brend__list{
     max-width: 100%;
     width: 800px;
-    
+    margin: 0 auto;
+    margin-top: 5rem;
   }
-
+  .brend__list h2 {
+    text-align: center;
+  }
 .list__wraper {
     display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
+.shop__list {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
 .contact {
   max-width: 100%;
   width: 750px;
@@ -334,8 +369,8 @@ color: #962fbf;
   margin-right: -5rem; 
 }
 .Send-btn {
-  max-width: 352px 100%;
-  width: 352px;
+  max-width: 100%;
+  width: 288px;
   height: 60px;
   cursor: pointer;
   background: #42826CFF;
@@ -381,3 +416,54 @@ color: #962fbf;
             transform: translate( 150px, -18px)scale(.8) ;
     color: #161619;
     padding-inline: 8px ;
+  }
+  .zero__profile {
+    max-width: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    outline-style: groove;
+    outline-color: #d1e5fc;
+  }
+  .zero__profile i {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0 0 14px ;
+  }
+  .user__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .user__info2 h2 {
+    font-size: 19px;
+    color: #fff;
+    margin-bottom: 9px;
+  }
+  .user__info2 h3 {
+    color: #d1e5fc;
+  }
+  .balans__info {
+    max-width: 150px;
+    height: 85px;
+    background: #1F1F22FF;
+    margin: 0 auto;
+    margin-top: 9px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 10px;
+  }
+   .balans__info h2 {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 12px;
+   }
+    .balans__info h3 {
+      color: #30BF54FF;
+      font-size: 18px;
+    }
+.main__info i {
+  font-size: 17px;
+  margin-bottom: 45px;
+}

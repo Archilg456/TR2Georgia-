@@ -1,0 +1,12 @@
+@media screen and (max-width: 960px) {
+    .ul__item {
+        display: none;
+    }
+        .burger__bar {
+            display: flex;
+        }
+        .log_reg_btn {
+            display: none;
+        }
+    }
+

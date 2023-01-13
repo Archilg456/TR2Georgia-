@@ -1,3 +1,5 @@
+
+//  Acordeon
 let accordion = document.querySelectorAll('.acordeon__box');
 
 for (i = 0; i < accordion.length; i++ ){
@@ -5,6 +7,7 @@ for (i = 0; i < accordion.length; i++ ){
         this.classList.toggle('active')
     } ) 
 }
+
 
 // log _ reg
 let log_btn = document.querySelector('.enter_btn');

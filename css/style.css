@@ -61,17 +61,6 @@ header {
 .li_item a {
   color: #161619FF;
 }
-.burger__bar {
-  display: flex;
-  flex-direction: column;
-  display: none;
-}
-.burger__span {
-  width: 1.9rem;
-  height: 0.2rem;
-  background: #42826CFF;
-  margin-bottom: 7px;
-} 
 .logo {
     display: flex;
     flex-direction: column;
@@ -98,6 +87,31 @@ header {
     margin-bottom: 0.5rem;
     background: #42826CFF;
 }
+
+/* burger menu */
+.burger__bar {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.burger__span {
+  width: 1.9rem;
+  height: 0.2rem;
+  background: #42826CFF;
+  margin-bottom: 7px;
+} 
+ .activeAdd {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+ }
+ .burger__menu {
+display: none;
+ }
+ 
+
 /* man background  */
 .custom-shape-divider-bottom-1671731562 {
   position: absolute;
@@ -362,6 +376,7 @@ label {
 .contact__info {
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
 }
 .icon__form {
   max-width: 100%;
@@ -656,4 +671,58 @@ color: #962fbf;
   font-size: 22px;
   font-weight: 800;
   margin: 8px 0 0 1rem;
+}
+
+/* slider css */
+
+.slider {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 225px;
+
+  margin-top: 1rem;
+  position: relative;
+  margin-top: 5rem;
+}
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 800;
+  color: darkred;
+  cursor: pointer;
+}
+.slider.sliderActive {
+  display: block;
+}
+
+.slider div {
+  margin: 0 auto;
+  width: 80vh;
+}
+.slider h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}
+.slider__btn {
+  background: none;
+  font-size: 3.5rem;
+  opacity: 0.5;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+}
+.btn_left {
+  left: 2rem;
+}
+.btn_rigth {
+  right: 30px;
+}
+
+img {
+  width: 100%;
+  background-size: cover;
 }

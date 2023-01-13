@@ -121,4 +121,18 @@ btnRight.addEventListener('click', btnRightclick);
 
 setInterval(() => {
     btnRightclick();
-}, 2500)
+}, 1500)
+
+
+
+
+// Burger__bar 
+
+
+let burgerBar = document.getElementById("burgerbar");
+let nav__item = document.querySelector(".navigation");
+
+burgerBar.addEventListener("click", function(){
+    nav__item.classList.toggle("newMenuBar");
+    burgerBar.classList.toggle('is-active')
+});

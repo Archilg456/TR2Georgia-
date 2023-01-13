@@ -8,7 +8,58 @@
         .log_reg_btn {
             display: none;
         }
-    }
+
+        .ul-active {
+        display: block;
+        position: fixed;
+        max-width: 100%;
+        width: 960px;
+        left: 0;
+        right: 0;
+        top: 8.5rem;
+        height: 100%;
+        background: rgb(47, 58, 58);
+        }
+        
+        .ul-active li {
+            margin-top: 5rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .ul-active li::after{
+            display: none;
+        }
+        .ul-active li:hover{
+        -webkit-transform: scale(1.075);
+         -ms-transform: scale(1.075);
+         transform: scale(1.075);
+        -webkit-transition: 0.3s ease-in;
+        -o-transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
+        cursor: pointer;
+     }
+        .ul-active a {
+            color: antiquewhite;
+        }
+        .ul-active a:hover{
+            color: #42826CFF;
+        }
+        }
+        .is-active .burger__span_2  {
+            display: none;
+          }
+          .is-active .burger__span_1{
+            -webkit-transform: translateY(4px) rotate(55deg);
+        -ms-transform: translateY(4px) rotate(55deg);
+            transform: translateY(4px) rotate(55deg);
+          }
+          .is-active .burger__span_3 {
+            -webkit-transform: translateY(-6.6px) rotate(-55deg);
+            -ms-transform: translateY(-6.6px) rotate(-55deg);
+                transform: translateY(-6.6px) rotate(-55deg);
+          }
+          }
+    
     @media screen and (max-width: 1120px){
         .contact_bg {
             max-width: 100%;

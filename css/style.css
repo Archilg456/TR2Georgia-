@@ -94,23 +94,13 @@ header {
   flex-direction: column;
   display: none;
 }
-.burger__span {
+.Burger__span {
   width: 1.9rem;
   height: 0.2rem;
   background: #42826CFF;
   margin-bottom: 7px;
+  transition: all 0.5s;
 } 
- .activeAdd {
-  display: block;
-  margin: 2rem 4rem;
-  font-size: 1.8rem;
-  color: white;
-  text-decoration: none;
- }
- .burger__menu {
-display: none;
- }
- 
 
 /* man background  */
 .custom-shape-divider-bottom-1671731562 {

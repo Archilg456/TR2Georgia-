@@ -17,14 +17,19 @@ log_btn.addEventListener("click", function(){
     log_btn.classList.toggle("enter_btn__avtive")
 
     log_reg_js.classList.toggle('log_reg_active')
+});
+
+//  Burger __ Bar 
+
+let burgerBar = document.getElementById('burgerbar');
+let ulItem = document.querySelector('.ul__item');
+
+burgerBar.addEventListener('click', function(){
+    burgerBar.classList.toggle("is-active");
+    ulItem.classList.toggle("ul-active");
 })
 
-// function openLoginForm(){
-//     document.body.classList.add("showLoginForm");
-//   }
-//   function closeLoginForm(){
-//     document.body.classList.remove("showLoginForm");
-// }
+
 
 
 

@@ -23,7 +23,6 @@
        
         }
         
-        
         .ul-active li {
             margin-top: 5rem;
             text-align: center;
@@ -76,3 +75,33 @@
     }
 }
 
+@media screen and (max-width: 750px) {
+    .slider div  {
+        width: 60vh;
+    }
+    .list__wraper {
+      
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+  
+}
+@media screen and (max-width: 560px) {
+    .slider div  {
+        width: 40vh;
+    }
+    .list__wraper {
+      
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  
+}
+@media screen and (max-width: 372px) {
+    .slider div  {
+        width: 34vh;
+    }
+    .list__wraper {
+      
+        grid-template-columns: 1fr 1fr ;
+      }
+
+}

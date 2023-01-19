@@ -1,14 +1,4 @@
 
-//  Acordeon
-let accordion = document.querySelectorAll('.acordeon__box');
-
-for (i = 0; i < accordion.length; i++ ){
-    accordion[i].addEventListener("click", function(){
-        this.classList.toggle('active')
-    } ) 
-}
-
-
 // log 
 let log_btn = document.querySelector('.enter_btn');
 let log_reg_js = document.querySelector('.log_reg');
@@ -31,9 +21,6 @@ burgerBar.addEventListener('click', function(){
     burgerBar.classList.toggle("is-active");
     ulItem.classList.toggle("ul-active");
 })
-
-
-
 
 
 

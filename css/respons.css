@@ -93,14 +93,15 @@
       
         grid-template-columns: 1fr 1fr 1fr;
       }
-  
+      .slider__btn {
+    display: none;
+}
 }
 @media screen and (max-width: 372px) {
     .slider div  {
-        width: 34vh;
+        width: 32vh;
     }
     .list__wraper {
-      
         grid-template-columns: 1fr 1fr ;
       }
 

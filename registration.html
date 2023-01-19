@@ -43,30 +43,31 @@
      </header>
      <section>
       <div class="log_reg">
-          <form action="loggedin.html" class="Log_in">
+          <form action="" class="login">
               <div class="input-group">
-                  <input type="text"  id="name" required class="input">
+                  <input type="text"  id="usernameField2" required class="input" >
                   <label for="name" class="input-label"><i class="fa-solid fa-right-to-bracket"></i>ელ.ფოსტა</label>
-               </div>
+              </div>
               <div class="input-group">
-                  <input type="Password"  id="Password" required class="input">
+                  <input type="Password"  id="Password passwordField2" required class="input">
                   <label for="Password" class="input-label"><i class="fa-solid fa-unlock-keyhole"></i> პაროლი</label>
               </div>
               <div class="chekbox-group">
-                  <input type="checkbox" name="chek" id="chek__box">
+                  <input type="checkbox" id="save">
                   <label for="checkbox">მომხმარებლის დამახსოვრება</label>
               </div>
+              <button type="submit" class="enter_btn" onclick = "window.location.href='loggedin.html';">შესვლა </button>
+              <button class="reg__btn" onclick = "window.location.href='registration.html';"> რეგისტრაცია </button>
           </form>
-          <button class="enter_btn" onclick = "window.location.href='loggedin.html';">შესვლა </button>
-          <button class="reg__btn"> რეგისტრაცია </button>
+          <div id="close_btn">
+              <i class="fa-regular fa-circle-xmark"></i>
+          </div>
       </div>
   </section>
-
      <section class="login_bg">
         <div class="reg_fomr_img">
         </div>
-      
-          <form action="" id="form__reg" method="GET">
+          <form action=""  id="form__reg" method="GET">
             <div class="in_lab_fomr">
               <label for="email">Email</label>
               <input type="text" id="myemail" name="email" />
@@ -99,16 +100,11 @@
                 <label for="agree">I agree terms and conditions</label>
                 <span class="error__text" id="error_agree"></span>
               </div>
-              <button type="submit">Submti Form</button>
+              <button type="submit">Registration</button>
             </form>
           </section>
-      
-    
 
-
-
-
-    
+<script src="js/validation.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

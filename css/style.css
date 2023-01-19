@@ -25,7 +25,9 @@ header {
      justify-content: space-between;
      align-items: center;
      margin-top: 1rem;
-     
+}
+.nav2 {
+  justify-content: space-evenly;
 }
 .ul__item {
     display: flex;
@@ -41,6 +43,7 @@ header {
   font-size: 18px;
   letter-spacing: 0.5px;
   padding: 0 10px;
+  color: #161619;
 }
 .li_item:after{
   content: "";
@@ -76,6 +79,12 @@ header {
     font-weight: 540;
     text-align: center;
     color: #161619FF;
+}
+.logo2 a {
+  font-size: 30px;
+    font-weight: 540;
+    text-align: center;
+    color: #d1e5fc;
 }
 .logo span {
     color: #42826CFF;
@@ -163,7 +172,7 @@ fill: #42826CFA;
     color: #42826CFF;
     font-weight: 900;
 }
-.Log_in {
+.login {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -192,9 +201,10 @@ fill: #42826CFA;
     margin-right: 25px;
 }
 .chekbox-group {
-    margin-top: 12px;
-    width: 350px;
+margin-top: 12px;
+ width: 350px;
 }
+
 label {
     color: #fff;
     font-size: 18px;
@@ -234,8 +244,31 @@ label {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   }
+  .log__out{
+  border-radius: 35px;
+  max-width: 100%;
+  width: 120px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+  background: #42826CFF;
+  color: #d1e5fc;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  }
+  .log__out:hover {
+     -webkit-transform: scale(1.075);
+        -ms-transform: scale(1.075);
+            transform: scale(1.075);
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
   .enter_btn_small {
-    width: 120px;
+  width: 120px;
   height: 35px;
   margin-left: 12px;
   font-size: 15px;
@@ -516,7 +549,7 @@ label {
 } 
 .log_reg.log_reg_active {
   max-width: 100%;
-  width: 550px;
+  width: 450px;
   height: 550px;
   background: #42826CFF;
   position: absolute;
@@ -525,12 +558,20 @@ label {
   left: 0;
   margin: 0 auto;
   border-radius: 12px;
-  padding-top: 35px;
+  padding-top: 85px;
   z-index: 9999;
+  text-align: center;
 }
 .log_reg_active button {
-  margin-left: 6rem;
-  margin-top: 55px;
+  margin-top: 1.5rem;
+}
+ #close_btn i {
+  font-size: 3rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+#close_btn i:hover {
+  color: darkred;
 }
 .user__profile {
   max-width: 100%;
@@ -541,7 +582,9 @@ label {
   margin-top: 1.9rem;
   left: 0;
   bottom: 0;
+  top: 0.001rem;
   padding-top: 1rem;
+  z-index: 20000;
 }
 .main__profile {
   margin-top: 12rem;
@@ -770,7 +813,7 @@ img {
 .checkbox_cl label {
   color: #161619;
 }
- button {
+#form__reg button {
     color: #fff;
     width: 150px;
     margin: 0 auto;
@@ -789,7 +832,7 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
-button:hover {
+#form__reg button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .in_lab_fomr label {
@@ -828,4 +871,12 @@ span {
 #save {
     margin-left: 18rem;
     margin-top: 1rem;
+}
+/* .two_div { 
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+} */
+.left_div {
+  width: 20%;
+  float: left;
 }

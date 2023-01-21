@@ -1,7 +1,3 @@
-
-
-
-    
 "Use Strict"
 
 
@@ -12,7 +8,7 @@ let listItems = [];
 
 function usersRequist(url) {
   return new Promise((resolve, reject) => {
-    fetch("")
+    fetch("http://localhost:3000/posts")
       .then((response) => response.json())
       .then((response) => {
         resolve(response);
@@ -29,8 +25,8 @@ usersRequist()
       let li = document.createElement("li");
       let img = document.createElement('img');
 
-      img.src = `${element.avatar}`;
-      li.innerText = `${element.email}`; 
+      img.src = `${element.img}`;
+      li.innerText = `${element.shoping_name}`; 
       
 
       listItems.push(li);

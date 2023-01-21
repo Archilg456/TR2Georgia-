@@ -22,6 +22,37 @@ burgerBar.addEventListener('click', function(){
     ulItem.classList.toggle("ul-active");
 })
 
+// navigation bg scrol chaged color 
+
+let navigation = document.getElementById('nav_scrol');
+
+window.onscroll = function (){
+  if (document.documentElement.scrollTop > 2){
+    navigation.classList.add("scrol");
+  }else {
+    navigation.classList.remove("scrol");
+  }
+};
+
+
+// scrol up btn 
+
+
+let upbtn = document.getElementById('go_up');
+
+upbtn.addEventListener('click', function(){
+  window.scrollTo({
+    top:0,
+    behavior: "smooth"
+  })
+});
+
+
+
+
+
+
+
 
 
 

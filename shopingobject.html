@@ -18,7 +18,7 @@
         </div>
     </section>
     <header>
-        <nav class="navigation">
+        <nav class="navigation" id="nav_scrol">
          <div class="logo">
              <a href="index.html"><i class="fa-solid fa-truck-fast"></i></a>
              <div class="drop"></div>
@@ -81,17 +81,19 @@
     </section>
     <section>
 
+        <div class="search__container" >
+            <div class="search__block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search"  id="filter"  placeholder="Search" > 
+            </div>
+    </div>
+    <ul id="result" class="user-list ">
+            
+    </ul>
+
+
         <div class="brend__list">
-            <div class="search__container" >
-                <div class="search__block">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search"  id="filter"  placeholder="Search" > 
-                </div>
-        </div>
-        <ul id="result" class="user-list ">
-                
-        </ul>
-        
+            
             <h2> ყველაზე სასურველი საიტები და ბრენდები </h2>
             <div class="list__wraper">
                 <div class="shop__list"> <a href="https://www.trendyol.com/butik/liste/2/erkek"><img src="img/shoping brend img/ty-web.svg" alt=""></a> </div>
@@ -108,7 +110,8 @@
             </div>
         </div>
     </section>
-
+    <i class="fa-solid fa-circle-up" id="go_up"></i>
+    <script src="js/filter.js"></script>
     <script src="js/slide.js"></script>
     <script src="js/script.js"></script>
 </body>

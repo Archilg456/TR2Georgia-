@@ -1,14 +1,21 @@
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {   
+  .navigation {
+    justify-content: space-between;
+    
+  }
     .ul__item {
         display: none;
     }
         .burger__bar {
             display: flex;
+            margin-right: 1rem;
         }
         .log_reg_btn {
             display: none;
         }
-
+        .logo {
+          margin-left: 1rem;
+        } 
         .ul-active {
         display: block;
         position: fixed;
@@ -20,9 +27,7 @@
         height: 100%;
         background: rgb(47, 58, 58);
         z-index: 99999;
-       
         }
-        
         .ul-active li {
             margin-top: 5rem;
             text-align: center;
@@ -60,7 +65,9 @@
             -ms-transform: translateY(-6.6px) rotate(-55deg);
                 transform: translateY(-6.6px) rotate(-55deg);
           }
-    
+
+
+         
     @media screen and (max-width: 1120px){
         .contact_bg {
             max-width: 100%;
@@ -83,7 +90,26 @@
       
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
+  .login_bg  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    height: 680px;
+  }
+  .reg_fomr_img {
+    max-width: 90%;
+    width: 520px;
+  }
+  .error__text {
+    max-width: 215px;
+  }
   
+  #form__reg label {
+    margin-bottom: 0.1rem;
+  }
 }
 @media screen and (max-width: 560px) {
     .slider div  {
@@ -96,13 +122,48 @@
       .slider__btn {
     display: none;
 }
+.reg_fomr_img {
+    max-width: 90%;
+    width: 520px;
+    
+  }
+  #form__reg {
+    max-width: 80%;
+    width: 200px;
+  }
+
+  .error__text {
+    max-width: 200px;
+  }
+  #form__reg label {
+    margin-bottom: 0;
+  }
 }
+
+@media screen and (max-width: 490px) {
+    .reg_fomr_img {
+       display: none;
+        
+      }
+      #form__reg {
+        max-width: 80%;
+        width: 3200px;
+      }
+      .error__text {
+        max-width: 420px;
+      }
+
+}
+
 @media screen and (max-width: 372px) {
     .slider div  {
         width: 32vh;
     }
     .list__wraper {
         grid-template-columns: 1fr 1fr ;
+      }
+      .error__text {
+        max-width: 270px;
       }
 
 }

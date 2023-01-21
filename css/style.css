@@ -1,5 +1,4 @@
 
-
 /* Header */
 .head2head {
     max-width: 100%;
@@ -9,6 +8,7 @@
     font-size: 16px;
     text-align: center;
     padding-top: 8px;
+    
 }
 header {
   position: sticky;
@@ -16,15 +16,20 @@ header {
   z-index: 999;
 }
 .navigation {
-    max-width: 95%;
-    width: 1200px;
+    max-width: 100%;
     height: 15%;
-    background: #fff;
     margin: 0 auto;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    transition: all 0.5s linear;
+}
+.navigation.scrol {
+  background-color: #2F3A3A;
+}
+.navigation.scrol a {
+  color: #F8F8F8;
 }
 .nav2 {
   justify-content: space-evenly;
@@ -34,6 +39,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 
 .li_item{
   position: relative;
@@ -69,6 +75,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0.5rem;
 }
 .logo i {
     font-size: 40px;
@@ -762,14 +769,14 @@ img {
 
 /* regstration */
 
-
 .reg_fomr_img {
   max-width: 100%;
   width: 750px;
   height: 650px;
   background-image: url(../img/login-users.png);
     background-position: right;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 .login_bg {
@@ -944,4 +951,13 @@ span {
 .user-list img {
   width: 150px;
   margin-top: 1rem;    
+}
+
+.fa-circle-up {
+  position: fixed;
+  font-size: 4.2rem;
+  color: #2F3A3A;
+  cursor: pointer;
+  right: 2rem;
+  bottom: 5rem;
 }

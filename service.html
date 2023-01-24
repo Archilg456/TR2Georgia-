@@ -44,22 +44,13 @@
      </header>  
      <section>
         <div class="log_reg">
-            <form action="" class="login">
-                <div class="input-group">
-                    <input type="text"  id="usernameField2" required class="input" >
-                    <label for="name" class="input-label"><i class="fa-solid fa-right-to-bracket"></i>ელ.ფოსტა</label>
-                </div>
-                <div class="input-group">
-                    <input type="Password"  id="Password passwordField2" required class="input">
-                    <label for="Password" class="input-label"><i class="fa-solid fa-unlock-keyhole"></i> პაროლი</label>
-                </div>
-                <div class="chekbox-group">
+            <form action="#" id="login">
+                    <input type="text"  id="usernameField2" required class="input" placeholder="შეიყვანეს E-mail">
+                    <input type="Password"  id="passwordField2" required class="input" placeholder="შეიყვანეთ პაროლი">
                     <input type="checkbox" id="save">
-                    <label for="checkbox">მომხმარებლის დამახსოვრება</label>
-                </div>
-                <button type="submit" class="enter_btn">შესვლა </button>
-                <button class="reg__btn" onclick = "window.location.href='registration.html';"> რეგისტრაცია </button>
-            </form>
+                <button type="submit" class="enter_btn">შესვლა </button> 
+              <button class="reg__btn" onclick = "window.location.href='registration.html';"> რეგისტრაცია </button> 
+            </form> 
             <div id="close_btn">
                 <i class="fa-regular fa-circle-xmark"></i>
             </div>
@@ -67,7 +58,6 @@
     </section>
     <section>
         <div class="log_reg">
-            
         </div>
     </section>
     <section>
@@ -80,7 +70,6 @@
                 </div>
             </div>
         </div>
-
         <div class="acordeon_container">
            <div class="acordeon__box">
               <div class="content__title"><i class="fa-solid fa-truck-fast">   სწრაფი მომსახურება</i></div>
@@ -97,7 +86,6 @@
                </div>
            </div>
        </div>
-
        <div class="acordeon_container">
            <div class="acordeon__box">
               <div class="content__title"> <i class="fa-solid fa-headset">   შოპინგ ასისტენტი</i></div>
@@ -107,8 +95,9 @@
            </div>
        </div>
     </section>
-
 <script src="js/Acordeon.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<script src="js/Cookies.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

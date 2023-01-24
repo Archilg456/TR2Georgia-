@@ -29,8 +29,7 @@
             <li  class="li_item"><a href="service.html">სერვისები</a></li>
             <li  class="li_item"><a href="shopingobject.html">მაღაზიები</a></li>
             <li  class="li_item"><a href="blog.html">ბლოგი</a></li>
-            <li  class="li_item"><a href="contact.html">კონტაქტი</a></li>
-            
+            <li  class="li_item"><a href="contact.html">კონტაქტი</a></li> 
         </ul>
         <div class="log_reg_btn">
             <button class="enter_btn enter_btn_small">შესვლა</button>
@@ -45,29 +44,21 @@
     </header> 
     <section>
         <div class="log_reg">
-            <form action="" class="login">
-                <div class="input-group">
-                    <input type="text"  id="usernameField2" required class="input" >
-                    <label for="name" class="input-label"><i class="fa-solid fa-right-to-bracket"></i>ელ.ფოსტა</label>
-                </div>
-                <div class="input-group">
-                    <input type="Password"  id="Password passwordField2" required class="input">
-                    <label for="Password" class="input-label"><i class="fa-solid fa-unlock-keyhole"></i> პაროლი</label>
-                </div>
-                <div class="chekbox-group">
+            <form action="#" id="login">
+                    <input type="text"  id="usernameField2" required class="input" placeholder="შეიყვანეს E-mail">
+                    <input type="Password"  id="passwordField2" required class="input" placeholder="შეიყვანეთ პაროლი">
                     <input type="checkbox" id="save">
-                    <label for="checkbox">მომხმარებლის დამახსოვრება</label>
-                </div>
-                <button type="submit" class="enter_btn">შესვლა </button>
-                <button class="reg__btn" onclick = "window.location.href='registration.html';"> რეგისტრაცია </button>
-            </form>
+       
+                <button type="submit" class="enter_btn">შესვლა </button> 
+              <button class="reg__btn" onclick = "window.location.href='registration.html';"> რეგისტრაცია </button> 
+            </form> 
+            <div id="close_btn">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
         </div>
     </section>
-
-
     <section class="post_bg">
         <div class="post_info" id="post__info">
-            
             <div class="overlay" id="overlay">
                 <div class="overlay__content" id="overlay__content">
                 </div>
@@ -77,7 +68,7 @@
                 <button> დაამატე კომენტარი </button>
             </div>
             <div class="overlay_add" id="overlay_add">
-                <form action="" id="form_add">
+                <form action="#" id="form_add">
                     <label for="title">კომენტარის დამატება</label>
                     <input type="text" name="titlefielde" id="title">
                     <button type="submit" class="add__btn"> დამატება </button>
@@ -86,10 +77,9 @@
         </div>
     </section>
     <i class="fa-solid fa-circle-up" id="go_up"></i>
-
 <script src="js/postadd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<script src="js/Cookies.js"></script>
 <script src="js/script.js"></script>
-
-
 </body>
 </html>

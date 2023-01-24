@@ -912,7 +912,6 @@ button:focus {
   color: beige;
   margin-top: 4rem;
 }
-
 .fa-trash-can-arrow-up {
   font-size: 4rem;
   margin-left: 88%;
@@ -922,7 +921,6 @@ button:focus {
 .fa-trash-can-arrow-up:hover{
   color: darkred;    
 }
-
 .overlay_add {
   position: fixed;
   width: 45%;
@@ -932,7 +930,6 @@ button:focus {
   margin-left: 27.5%;  
   display: none;
 }
-
 .overlay_add form {
   display: flex;
   margin: 0 auto;

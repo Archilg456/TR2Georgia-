@@ -44,22 +44,14 @@
      </header>
      <section>
       <div class="log_reg">
-          <form action="" class="login">
-              <div class="input-group">
-                  <input type="text"  id="usernameField2" required class="input" >
-                  <label for="name" class="input-label"><i class="fa-solid fa-right-to-bracket"></i>ელ.ფოსტა</label>
-              </div>
-              <div class="input-group">
-                  <input type="Password"  id="Password passwordField2" required class="input">
-                  <label for="Password" class="input-label"><i class="fa-solid fa-unlock-keyhole"></i> პაროლი</label>
-              </div>
-              <div class="chekbox-group">
+          <form action="#" id="login">
+                  <input type="text"  id="usernameField2" required class="input" placeholder="შეიყვანეს E-mail">
+                  <input type="Password"  id="passwordField2" required class="input" placeholder="შეიყვანეთ პაროლი">
                   <input type="checkbox" id="save">
-                  <label for="checkbox">მომხმარებლის დამახსოვრება</label>
-              </div>
-              <button type="submit" class="enter_btn">შესვლა </button>
-              <button class="reg__btn" onclick = "window.location.href='registration.html';"> რეგისტრაცია </button>
-          </form>
+     
+              <button type="submit" class="enter_btn">შესვლა </button> 
+            <button class="reg__btn" onclick = "window.location.href='registration.html';"> რეგისტრაცია </button> 
+          </form> 
           <div id="close_btn">
               <i class="fa-regular fa-circle-xmark"></i>
           </div>
@@ -68,9 +60,9 @@
      <section class="login_bg">
         <div class="reg_fomr_img">
         </div>
-          <form action=""  id="form__reg" method="GET">
+          <form action="#"  id="form__reg" method="GET">
             <div class="in_lab_fomr">
-              <label for="email">Email</label>
+              <label for="email"> Email </label>
               <input type="text" id="myemail" name="email" />
               <span class="error__email" id="error_email"></span>
             </div>
@@ -104,8 +96,9 @@
               <button type="submit">Registration</button>
             </form>
           </section>
-        
 <script src="js/validation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<script src="js/Cookies.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

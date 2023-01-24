@@ -4,53 +4,53 @@ let data = [
 
     {
         id: 1,
-        imgURL: 'img/shoping brend img/carters-logo.svg',
+        imgURL: 'img/shopingbrendimg/carters-logo.svg',
         title: ''
     },
 
     {
         id: 2,
-        imgURL: 'img/shoping brend img/9973673459742.svg',
+        imgURL: 'img/shopingbrendimg/9973673459742.svg',
         title: ''
     },
     {
         id: 3,
-        imgURL: 'img/shoping brend img/de-facto-logo-light-v2.svg',
+        imgURL: 'img/shopingbrendimg/de-facto-logo-light-v2.svg',
         title: ''
     },
     {
         id: 4,
-        imgURL: 'img/shoping brend img/de-facto-logo-light-v2.svg' ,
+        imgURL: 'img/shopingbrendimg/de-facto-logo-light-v2.svg' ,
         title: ''
     },
     {
         id: 5,
-        imgURL: 'img/shoping brend img/flo-logo.svg' ,
+        imgURL: 'img/shopingbrendimg/flo-logo.svg' ,
         title: ''
     },
     {
         id: 6,
-        imgURL: 'img/shoping brend img/logo-new.svg' ,
+        imgURL: 'img/shopingbrendimg/logo-new.svg' ,
         title: ''
     },
     {
         id: 7,
-        imgURL: 'img/shoping brend img/logo.svg' ,
+        imgURL: 'img/shopingbrendimg/logo.svg' ,
         title: ''
     },
     {
         id: 8,
-        imgURL: 'img/shoping brend img/mango.svg' ,
+        imgURL: 'img/shopingbrendimg/mango.svg' ,
         title: ''
     },
     {
         id: 9,
-        imgURL: 'img/shoping brend img/mavi-logo.svg' ,
+        imgURL: 'img/shopingbrendimg/mavi-logo.svg' ,
         title: ''
     },
     {
         id: 10,
-        imgURL: 'img/shoping brend img/teknosa.svg' ,
+        imgURL: 'img/shopingbrendimg/teknosa.svg' ,
         title: ''
     },
 

@@ -490,8 +490,6 @@ label {
     padding-inline: 8px ;
   }
   
-  
-
 .log_reg {
   display: none;
 } 
@@ -1041,3 +1039,11 @@ button:focus {
 .list__wraper .img-shrink {
   width: 0em;
 }
+
+#login  input {
+  margin-top: 2rem;
+}
+#login input::placeholder {
+  color: #161619;
+  font-weight: 800;
+} 

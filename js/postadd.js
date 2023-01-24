@@ -1,5 +1,6 @@
 "use strict"
 
+
 let main_box = document.getElementById('post__info');
 let overlay = document.getElementById('overlay');
 let popapcontent = document.getElementById('overlay__content');
@@ -132,3 +133,4 @@ upbtn.addEventListener('click', function(){
     behavior: "smooth"
   })
 });
+

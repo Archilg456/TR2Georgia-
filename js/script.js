@@ -35,21 +35,6 @@ window.onscroll = function (){
 };
 
 
-// scrol up btn 
-
-
-let upbtn = document.getElementById('go_up');
-
-upbtn.addEventListener('click', function(){
-  window.scrollTo({
-    top:0,
-    behavior: "smooth"
-  })
-});
-
-
-
-
 
 
 

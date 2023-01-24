@@ -385,7 +385,7 @@ label {
     text-align: center;
   }
 .list__wraper {
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .shop__list {
@@ -968,6 +968,9 @@ span {
   margin: 0 auto;
   border: 0.5px solid darkslategrey;
   margin-top: 2rem;
+  position: relative;
+  z-index: 555;
+  
 }
 h5 {
   text-align: center;
@@ -1173,4 +1176,42 @@ button:focus {
   height: 100%;
   border: 1px solid darkslategrey;
   margin: 0 auto;
+}
+
+/* filter */
+.buttons button {
+ max-width: 100%;
+ width: 188px;
+ height: 45px;
+ white-space: nowrap;
+ margin-top: 1.5rem;
+ color: #fff;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: darkslategrey;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.buttons button:hover,
+.buttons .btn-clicked
+ {
+  background: #2F3A3A;
+}
+.list__wraper img {
+  margin-top: 1.5rem;
+  padding-left: 2rem;
+  transition: 0.6s;
+}
+
+.list__wraper .img-expend {
+  margin-top: 1.5rem;
+  padding-left: 2rem;
+  
+ 
+}
+.list__wraper .img-shrink {
+  width: 0em;
 }

@@ -2,53 +2,52 @@
 
 
 
-let filter = document.getElementById("filter");
-let result = document.getElementById("result");
-let listItems = [];
+let btns = document.querySelectorAll('.buttons button');
+let imgs = document.querySelectorAll('.list__wraper img');
 
-function usersRequist(url) {
-  return new Promise((resolve, reject) => {
-    fetch("http://localhost:3000/posts")
-      .then((response) => response.json())
-      .then((response) => {
-        resolve(response);
-      })
-      .catch((error) => {
-        reject("Error");
-      });
-  });
+
+for(let i=1; i < btns.length; i++ ){
+
+    btns[i].addEventListener('click', filterImg);
 }
 
-usersRequist()
-  .then((response) => {
-    response.data.forEach((element) => {
-      let li = document.createElement("li");
-      let img = document.createElement('img');
+function setActiveBtn(e) {
 
-      img.src = `${element.img}`;
-      li.innerText = `${element.shoping_name}`; 
-      
-
-      listItems.push(li);
-    
-      li.appendChild(img);
-      result.appendChild(li);   
-     
+    btns.forEach( btn => {
+        btn.classList.remove('btn-clicked');
     });
-  })
-  .catch((reject) => console.log(reject));
 
-function filterData(searchSymbol) {
-  listItems.forEach((item) => {
-    if (item.innerText.toLowerCase().includes(searchSymbol.toLowerCase())) {
-      item.classList.remove("hide");
-    } 
-    else {  
-      item.classList.add("hide");
-    }
-  });
+    e.target.classList.add('btn-clicked');
 }
 
-filter.addEventListener("keyup", function (event) {
-  filterData(event.target.value);
+function filterImg(e) {
+
+    setActiveBtn(e);
+
+    imgs.forEach(img => {
+
+        img.classList.remove('img-shrink');
+        img.classList.add('img-expend');
+
+
+        let imgType = parseInt(img.dataset.img);
+        let btnType = parseInt(e.target.dataset.btn);
+
+
+        if (imgType !== btnType) {
+            img.classList.remove('img-expend');
+            img.classList.add('img-shrink');
+        }
+    });
+}
+
+btns[0].addEventListener('click', (e) => {
+
+    setActiveBtn(e);
+
+    imgs.forEach(img => {
+        img.classList.remove('img-shrink');
+        img.classList.add('img-expend');
+    });
+
 });

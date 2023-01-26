@@ -126,13 +126,3 @@ setInterval(() => {
 }, 1500)
 
 
-// scrol up btn 
-
-let upbtn = document.getElementById('go_up');
-
-upbtn.addEventListener('click', function(){
-  window.scrollTo({
-    top:0,
-    behavior: "smooth"
-  })
-});

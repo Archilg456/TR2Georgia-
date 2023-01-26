@@ -1,3 +1,6 @@
+"use strict"
+
+
 let currencyEl_one = document.getElementById('currency-one');
 let currencyEl_two = document.getElementById('currency-two');
 let amountEl_one = document.getElementById('amount-one');

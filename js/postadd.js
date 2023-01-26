@@ -4,7 +4,7 @@
 let main_box = document.getElementById('post__info');
 let overlay = document.getElementById('overlay');
 let popapcontent = document.getElementById('overlay__content');
-let closeBtn = document.getElementById('close_btn');
+let closeBtn = document.getElementById('close_btn_1');
 let addBtn = document.getElementById('add');
 let overlayAdd = document.getElementById('overlay_add');
 let formAdd = document.getElementById('form_add');
@@ -123,14 +123,4 @@ window.onscroll = function (){
 };
 
 
-// scrol up btn 
-
-let upbtn = document.getElementById('go_up');
-
-upbtn.addEventListener('click', function(){
-  window.scrollTo({
-    top:0,
-    behavior: "smooth"
-  })
-});
 

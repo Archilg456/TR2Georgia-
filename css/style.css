@@ -884,15 +884,16 @@ button:focus {
 }
 .fa-circle-xmark {
   font-size: 42px;
-  color: red;
   position: absolute;
+  color: red;
   cursor: pointer;
   top: 10px;
   right: 18px;
 }
 .overlay {
   position: fixed;
-  width: 45%;
+  max-width: 100%;
+  width: 750px;
   height: 25%;
   background: cadetblue;
   margin-top: 10%;
@@ -903,6 +904,7 @@ button:focus {
   display: block;
   margin: 0 auto;
   margin-top: 10rem;
+  
 }
 .overlay__content p {
   font-size: 18px;
@@ -922,16 +924,17 @@ button:focus {
 }
 .overlay_add {
   position: fixed;
-  width: 45%;
+  max-width: 100%;
+  width: 750px;
   height: 25%;
   background: cadetblue;
   margin-top: 10%;
   margin-left: 27.5%;  
   display: none;
 }
+
 .overlay_add form {
   display: flex;
-  margin: 0 auto;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
@@ -949,6 +952,8 @@ button:focus {
 }
 .overlay_add.activeAdd {
   display: block;
+  max-width: 100%
+  wwidth: 750px;
   margin: 0 auto;
 }
 .overlay_add button {
@@ -990,13 +995,13 @@ button:focus {
   transition-duration: 0.4s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.post_bg {
+.post_info {
   max-width: 100%;
-  width: 850px;
+  width: 750px;
   height: 100%;
-  border: 1px solid darkslategrey;
   margin: 0 auto;
 }
+
 
 /* filter */
 .buttons button {

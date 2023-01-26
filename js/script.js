@@ -1,5 +1,7 @@
 "Use Strict"
+
 // log 
+
 let log_btn = document.querySelector('.enter_btn');
 let log_reg_js = document.querySelector('.log_reg');
 let closeBtn = document.getElementById("close_btn");
@@ -33,10 +35,6 @@ window.onscroll = function (){
     navigation.classList.remove("scrol");
   }
 };
-
-
-
-
 
 
 

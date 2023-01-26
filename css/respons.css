@@ -200,6 +200,9 @@
     grid-template-columns: 1fr;
    margin-left: 3rem;
   }
+  .fa-trash-can-arrow-up {
+   margin-left: 2px;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -223,6 +226,9 @@
 .content__title {
   font-size: 20px;
   white-space: pre-wrap;
+}
+.fa-trash-can-arrow-up {
+  font-size: 3rem;
 }
 
 }

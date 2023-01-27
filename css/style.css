@@ -800,7 +800,7 @@ h5 {
   color: #42826CFF;
   font-weight: 700;
 }
-.container {
+ .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -861,7 +861,7 @@ select:focus,
 input:focus,
 button:focus {
   outline: 0;
-}
+} 
 /* post add */
 
 .post__info__box {
@@ -1159,3 +1159,6 @@ button:focus {
 .topic a {
   color: #2F3A3A;
 }
+
+/* Footer CSS */
+

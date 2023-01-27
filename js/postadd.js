@@ -4,7 +4,7 @@
 let main_box = document.getElementById('post__info');
 let overlay = document.getElementById('overlay');
 let popapcontent = document.getElementById('overlay__content');
-let closeBtn = document.getElementById('close_btn_1');
+let closeBtn_1 = document.getElementById('close_btn_1');
 let addBtn = document.getElementById('add');
 let overlayAdd = document.getElementById('overlay_add');
 let formAdd = document.getElementById('form_add');
@@ -69,7 +69,7 @@ function overlaydescription(element){
     description.innerText = element.body;
     popapcontent.appendChild(description);
 }
-closeBtn.addEventListener('click', function(){
+closeBtn_1.addEventListener('click', function(){
     overlay.classList.remove('active');
     popapcontent.innerHTML = " ";  
 })

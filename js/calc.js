@@ -14,7 +14,7 @@ function calculate() {
   let currency_one = currencyEl_one.value;
   let  currency_two = currencyEl_two.value;
 
-  fetch(`https://v6.exchangerate-api.com/v6/b71ba5a6f69833fe3ac900ec/latest/${currency_one}`)
+  fetch(`https://v6.exchangerate-api.com/v6/09bfba01301e487a4eeb0bc3/latest/${currency_one}`)
     .then((res) => res.json())
     .then((data) => {
 

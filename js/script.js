@@ -1,6 +1,4 @@
-"Use Strict"
-
-// log 
+"use strict"
 
 let log_btn = document.querySelector('.enter_btn');
 let log_reg_js = document.querySelector('.log_reg');
@@ -26,25 +24,12 @@ burgerBar.addEventListener('click', function(){
 
 // navigation bg scrol chaged color 
 
-let navigation = document.getElementById('nav_scrol');
+let navigation1 = document.getElementById('nav_scrol');
 
 window.onscroll = function (){
   if (document.documentElement.scrollTop > 2){
-    navigation.classList.add("scrol");
+    navigation1.classList.add("scrol");
   }else {
-    navigation.classList.remove("scrol");
+    navigation1.classList.remove("scrol");
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-

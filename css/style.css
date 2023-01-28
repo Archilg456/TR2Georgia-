@@ -160,12 +160,11 @@ fill: #42826CFA;
     max-width: 100%;
     width: 550px;
     margin: 0 auto;
-    margin-top: -2.2rem;
+   margin-top: 5.6rem;
 }
 .about__us  h2 {
     font-size: 35px;
     font-weight: 800;
-    margin-top: 155px;
     margin-bottom: 35px;
 }
 .about__us p {
@@ -334,6 +333,7 @@ label {
     width: 750px;
     margin: 0 auto;
     margin-top: 3.5rem;
+    margin-bottom: 5.5rem;
     color: #fff;
   }
   .content__title i {
@@ -789,7 +789,8 @@ span {
   height: 350px;
   margin: 0 auto;
   border: 0.5px solid darkslategrey;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   position: relative;
   z-index: 555;
   
@@ -1057,6 +1058,7 @@ button:focus {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   margin-top: 9%;
+  margin-bottom: 2.6rem;
 }
 .container__1 .content{
   display: flex;
@@ -1162,3 +1164,66 @@ button:focus {
 
 /* Footer CSS */
 
+.footer-container  {
+    width: 100%;
+    background: #2F3A3A; 
+    padding: 5px 0;
+}
+.footer-links {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+}
+.footer-link-items h2{
+  padding-top: 0.2rem;
+   margin-bottom: 0.5rem;
+   color: #dedede;
+   font-size: 1.6rem;
+   font-weight: 800;
+}
+.footer-link-items a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  
+}
+.main-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.main-footer span {
+  color: #42826C;
+}
+.main-footer i {
+  color: #fff;
+} 
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  font-size: 1rem;
+  color: #42826C;
+}
+.fa-twitter:hover {
+  color:#1D9BF0FF ;
+}
+.fa-google-plus:hover {
+  color: #D64C3EFF;
+}
+.fa-youtube:hover {
+  color: #FF0000FF;
+}
+.fa-linkedin-square:hover {
+  color:#0A66C2FF ;
+}
+.fa-facebook:hover {
+  color: #1877F2FF;
+}

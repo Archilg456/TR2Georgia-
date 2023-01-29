@@ -1,3 +1,9 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap');
+
 
 /* Header */
 .head2head {
@@ -47,6 +53,7 @@ header {
   letter-spacing: 0.5px;
   padding: 0 10px;
   color: #161619;
+  font-family: 'Noto Sans Georgian', sans-serif;
 }
 .li_item:after{
   content: "";
@@ -73,6 +80,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
+    font-family: 'Grandstander', cursive;
 }
 .logo i {
     font-size: 40px;
@@ -161,15 +169,18 @@ fill: #42826CFA;
     width: 550px;
     margin: 0 auto;
    margin-top: 5.6rem;
+   font-family: 'Gluten', cursive;
 }
 .about__us  h2 {
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 35px;
+    font-family: 'Noto Sans Georgian', sans-serif;
 }
 .about__us p {
     font-size: 19px;
     letter-spacing: 0.2px;
+    font-family: 'Noto Sans Georgian', sans-serif;
 }
 .about__us span {
     color: #42826CFF;
@@ -180,6 +191,7 @@ fill: #42826CFA;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   
 }
 .input-group {
     position: relative;
@@ -335,6 +347,7 @@ label {
     margin-top: 3.5rem;
     margin-bottom: 5.5rem;
     color: #fff;
+    font-family: 'Noto Sans Georgian', sans-serif;
   }
   .content__title i {
     color: #161619FF;
@@ -545,6 +558,7 @@ color: #962fbf;
   margin-top: 1rem;
   position: relative;
   margin-top: 5rem;
+  
 }
 h1 {
   text-align: center;
@@ -552,6 +566,7 @@ h1 {
   font-weight: 800;
   color: darkred;
   cursor: pointer;
+  
 }
 .slider.sliderActive {
   display: block;
@@ -565,6 +580,7 @@ h1 {
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
+  font-family: 'Noto Sans Georgian', sans-serif;
 }
 .slider__btn {
   background: none;
@@ -793,6 +809,7 @@ span {
   margin-bottom: 1rem;
   position: relative;
   z-index: 555;
+  font-family: 'Noto Sans Georgian', sans-serif;
   
 }
 h5 {
@@ -954,7 +971,7 @@ button:focus {
 .overlay_add.activeAdd {
   display: block;
   max-width: 100%
-  wwidth: 750px;
+  width: 750px;
   margin: 0 auto;
 }
 .overlay_add button {
@@ -1046,8 +1063,6 @@ button:focus {
   color: #161619;
   font-weight: 800;
 } 
-
-
 /* CONTACT FORM */
 
 .container__1{
@@ -1164,10 +1179,12 @@ button:focus {
 
 /* Footer CSS */
 
-.footer-container  {
+ .footer-container  {
     width: 100%;
     background: #2F3A3A; 
     padding: 5px 0;
+    margin-top: 31rem;
+  
 }
 .footer-links {
 display: flex;
@@ -1183,8 +1200,7 @@ text-align: center;
    font-weight: 800;
 }
 .footer-link-items a {
-  color: #ffffff;
-  font-weight: 600;
+  color: #fff;
   font-size: 1.2rem;
   
 }
@@ -1226,4 +1242,4 @@ text-align: center;
 }
 .fa-facebook:hover {
   color: #1877F2FF;
-}
+} 

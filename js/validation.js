@@ -119,3 +119,7 @@ if (emailValue.match(emailPattern)) {
     spanErorr.innerText = " ";
   }
 });
+
+
+
+

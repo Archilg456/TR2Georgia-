@@ -1,3 +1,6 @@
+"use strict"
+
+
 let forRegistration = document.getElementById('form__reg');
 let age = false;
 
@@ -119,7 +122,6 @@ if (emailValue.match(emailPattern)) {
     spanErorr.innerText = " ";
   }
 });
-
 
 
 

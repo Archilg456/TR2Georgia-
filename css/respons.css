@@ -1,12 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media screen and (max-width: 960px) {   
   .navigation {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
   }
     .ul__item {
         display: none;
     }
         .burger__bar {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             margin-right: 1rem;
         }
@@ -100,14 +111,23 @@
     height: 100%;
   }
   .container__1 .content{
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
  .container__1 .content .left-side{
    width: 100%;
-   flex-direction: row;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
    margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
  }
  .container__1 .content .left-side::before{
    display: none;
@@ -120,7 +140,9 @@
 @media screen and (max-width: 781px){
 
   .buttons {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -131,14 +153,24 @@
     }
     .list__wraper {
       
+        -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
   .login_bg  {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin: 0 auto;
     height: 680px;
   }
@@ -158,6 +190,8 @@
 @media screen and (max-width: 580px){
   .buttons {
     
+    -ms-grid-columns: 1fr 1fr ;
+    
     grid-template-columns: 1fr 1fr ;
   }
 }
@@ -166,6 +200,8 @@
         width: 40vh;
     }
     .list__wraper {
+      
+        -ms-grid-columns: 1fr 1fr 1fr;
       
         grid-template-columns: 1fr 1fr 1fr;
       }
@@ -190,12 +226,16 @@
   }
   .buttons {
    
+    -ms-grid-columns: 1fr 1fr;
+   
     grid-template-columns: 1fr 1fr;
   }
 
 }
 @media screen and (max-width: 400px){
   .buttons {
+   
+    -ms-grid-columns: 1fr;
    
     grid-template-columns: 1fr;
    margin-left: 3rem;
@@ -238,6 +278,7 @@
         width: 32vh;
     }
     .list__wraper {
+        -ms-grid-columns: 1fr 1fr ;
         grid-template-columns: 1fr 1fr ;
       }
       .error__text {

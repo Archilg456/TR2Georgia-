@@ -1,5 +1,6 @@
 "use strict"
 
+
 let log_btn = document.querySelector('.enter_btn');
 let log_reg_js = document.querySelector('.log_reg');
 let closeBtn = document.getElementById("close_btn");
